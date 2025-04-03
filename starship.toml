@@ -22,6 +22,7 @@ $kubernetes\
 $azure\
 $container\
 [ ](fg:#1d2230)\
+$cmd_duration\
 \n$character"""
 
 [character]
@@ -75,6 +76,11 @@ untracked = '󰼅'
 stashed = '📦'
 diverged = '󰦻'
 deleted = ''
+
+[cmd_duration]
+min_time = 1_000
+#style = "bg:#1d2230"
+format = ' $duration'
 
 # Languages
 [nodejs]
