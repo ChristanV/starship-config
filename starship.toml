@@ -151,7 +151,7 @@ format = '[[ $symbol$azure($subscription)](fg:#a0a9cb bg:#1d2230)]($style)'
 disabled = false
 symbol = ''
 style = "bg:#1d2230"
-format = '[[ $symbol$kubernetes $context](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ $symbol$kubernetes $context->$namespace](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [container]
 style = "bg:#1d2230"
