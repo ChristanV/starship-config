@@ -17,9 +17,9 @@ $terraform\
 $nix_shell\
 $helm\
 [](fg:#212736 bg:#1d2230)\
-$aws\
 $kubernetes\
 $azure\
+$aws\
 $container\
 [ ](fg:#1d2230)\
 $cmd_duration\
@@ -137,20 +137,21 @@ style = "bg:#1d2230"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [aws]
-symbol = ''
+disabled = false
+symbol ='  '
 style = "bg:#1d2230"
-format = '[[ $symbol$aws($profile $region)  ](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ $symbol$aws($profile)](fg:#a0a9cb bg:#1d2230)]($style)'
 
-#[azure]
-#symbol = ''
-#style = "bg:#1d2230"
-#format = '[[ $symbol$aws($profile $region)  ](fg:#a0a9cb bg:#1d2230)]($style)'
+[azure]
+disabled = false
+style = "bg:#1d2230"
+format = '[[ $symbol$azure($subscription)](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [kubernetes]
 disabled = false
 symbol = ''
 style = "bg:#1d2230"
-format = '[[ $symbol$kubernetes $context  ](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ $symbol$kubernetes $context](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [container]
 style = "bg:#1d2230"
