@@ -27,6 +27,7 @@ $cmd_duration\
 
 [character]
 success_symbol = '[❯](#769ff0)'
+error_symbol = '[❯](#769ff0)'
 
 [os]
 #style = "fg:#e3e5e5 bg:#769ff0"
@@ -48,7 +49,7 @@ disabled = true
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
 format = "[$path]($style)"
-truncation_length = 3
+truncation_length = 15
 truncate_to_repo = false
 #truncation_symbol = "…/"
 
